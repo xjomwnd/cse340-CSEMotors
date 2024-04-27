@@ -117,18 +117,18 @@ main {
   background-color: white;
   overflow: auto; /* Add scrollbars if content exceeds max-height */
   justify-content: center;
-  border: 3px solid rgb(107, 153, 247);
+  border: 5px solid rgb(107, 153, 247);
 }
 
 .boundary {
   border-radius: 10px; /* Adjust the value to control the curve radius */
-  border: 3px solid solid rgb(107, 153, 247); /* Add a border for clarity */
+  border: 5px solid solid rgb(107, 153, 247); /* Add a border for clarity */
   padding: 20px; /* Add padding for visual space */
 }
 
 .boundary {
   border-radius: 10px 20px 30px 40px; /* top-left, top-right, bottom-right, bottom-left */
-  border: 3px solid solid rgb(107, 153, 247); /* Add a border for clarity */
+  border: 5px solid solid rgb(107, 153, 247); /* Add a border for clarity */
   padding: 20px; /* Add padding for visual space */
 }
 
