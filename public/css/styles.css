@@ -108,8 +108,6 @@ main img {
 /* For a blue margin */
 main {
   background-color: white;
- 
-  
   overflow: auto; /* Add scrollbars if content exceeds max-height */
   justify-content: center;
   border: 10px solid blue;
