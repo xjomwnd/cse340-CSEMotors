@@ -126,6 +126,12 @@ main {
   padding: 20px; /* Add padding for visual space */
 }
 
+.boundary {
+  border-radius: 10px 20px 30px 40px; /* top-left, top-right, bottom-right, bottom-left */
+  border: 2px solid #000; /* Add a border for clarity */
+  padding: 20px; /* Add padding for visual space */
+}
+
 
 
 
