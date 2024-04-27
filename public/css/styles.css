@@ -125,12 +125,7 @@ main {
 
 .boundary {
   border-radius: 10px; /* Adjust the value to control the curve radius */
-  border: 5px solid solid rgb(107, 153, 247); /* Add a border for clarity */
-  padding: 20px; /* Add padding for visual space */
-}
-
-.boundary {
-  border-radius: 10px 20px 30px 40px; /* top-left, top-right, bottom-right, bottom-left */
+  border-radius: 10px 20px 30px 40px; /* top-left, top-right, bottom-right, bottom-left*/
   border: 5px solid solid rgb(107, 153, 247); /* Add a border for clarity */
   padding: 20px; /* Add padding for visual space */
 }
