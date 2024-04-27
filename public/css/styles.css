@@ -102,7 +102,8 @@ main {
 }
 
 .main {
-  max-width: 400px; /* Set a maximum width */
+  max-width: 75%; /* Set a maximum width */
+  max-height: auto;
  
 }
 
