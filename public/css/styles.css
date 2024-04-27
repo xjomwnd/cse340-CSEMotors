@@ -96,9 +96,9 @@ main {
 }
 
 .main {
-  max-width: 700px; /* Set a maximum width */
+  max-width: 600px; /* Set a maximum width */
   margin: 0 auto; /* Center the .main element horizontally */
-  padding: 10px; /* Add padding to the .main element */
+  padding: 20px; /* Add padding to the .main element */
 }
 
 
