@@ -54,7 +54,7 @@ nav {
 
 nav ul {
   display: flex;
-  background-color: #3d0869;
+  background-color: #08010ecd;
   list-style-type: none;
   margin: 0;
   padding: 10;
@@ -63,7 +63,7 @@ nav ul {
 
 .nav {
   text-align: justify;
-  color: #f70606;
+  color: hwb(0 95% 3%);
   padding: 5px;
 }
 
