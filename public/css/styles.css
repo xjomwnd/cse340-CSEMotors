@@ -1,132 +1,56 @@
-/******* Change Box Model ***************/
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-/* Colors Plan cse340-CSEMotors*/
+/* Colors */
 :root {
   --dark-gray: #333333;
   --bright-red: #e61111;
   --white: #FFFFFF;
   --blue: #0072BC;
-}
-
-/* General Styles */
-body {
+ }
+ 
+ /* General Styles */
+ body {
   font-family: 'Merriweather', serif;
   color: var(--white);
   background-color: var(--white);
-}
-
-h1, h2, h3, h4, h5, h6 {
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   color: var(--dark-gray);
-}
-
-/* Header */
-header {
+ }
+ 
+ /* Header */
+ header {
   background-color: var(--dark-gray);
   color: var(--bright-red);
   padding: 20px;
-}
-
-/* Navigation */
-nav a {
+ }
+ 
+ /* Navigation */
+ nav a {
   color: var(--bright-red);
   text-decoration: none;
-}
-
-/* Main Content */
-main {
+ }
+ 
+ /* Main Content */
+ main {
   background-color: var(--white);
   border: 1px solid var(--blue);
   margin: 20px;
   padding: 20px;
-}
-
-/* Checkerboard */
-.checkerboard {
+ }
+ 
+ /* Checkerboard */
+ .checkerboard {
   background-image: linear-gradient(45deg, #000000 25%, transparent 25%, transparent 75%, #000000 75%), linear-gradient(45deg, #000000 25%, transparent 25%, transparent 75%, #000000 75%);
   background-size: 50px 50px;
   background-position: 0 0, 25px 25px;
-}
-
-/* Calls to Action */
-.cta {
+ }
+ 
+ /* Calls to Action */
+ .cta {
   background-color: var(--bright-red);
   color: var(--white);
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 4px;
-}
-
-/* Additional styles for other elements */
-/* main.css */
-.site {
-  max-width: 992px;
-  background-color: #ffffff;
-  max-height: 1200px;
-}
-
-/* Code for the header */
-header {
-  padding: 20px;
-}
-
-header img {
-  display: block;
-  float: left;
-}
-
-header p {
-  float: right;
-}
-
-.name-label {
-  font-size: 0.6em;
-  clear: both;
-  float: right;
-}
-
-/* Default Styles */
-.checkerboard {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  grid-gap: 10px;
-}
-
-.checkerboard img {
-  width: 100%;
-  height: auto;
-  max-width: 200px;
-  max-height: 200px;
-}
-
-/* Large Screen Styles */
-@media (min-width: 992px) {
-  .checkerboard {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-/* Medium Screen Styles */
-@media (max-width: 991px) and (min-width: 768px) {
-  .checkerboard {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Small Screen Styles */
-@media (max-width: 767px) {
-  .checkerboard {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Extra Small Screen Styles */
-@media (max-width: 480px) {
-  .checkerboard {
-    grid-template-columns: 1fr;
-  }
-}
+ }
