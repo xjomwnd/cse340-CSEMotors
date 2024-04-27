@@ -95,16 +95,6 @@ main img {
   
 }
 
-/* Main Content */
-main {
-  background-color: var(--white);
-  border: 1px solid var(--blue);
-  margin: 20px;
-  padding: 20px;
-  width: 40vw; /* Set the width to 40% of the viewport width */
-  height: 60vh; /* Set the height to 60% of the viewport height */
-}
-
 .container {
   position: relative;
 }
