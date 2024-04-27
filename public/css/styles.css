@@ -106,6 +106,18 @@ main img {
   max-width: 100%;
   
 }
+
+main {
+  margin-top: 20px; /* Sets a top margin of 20px */
+  margin-right: 20px; /* Sets a right margin of 20px */
+  margin-bottom: 20px; /* Sets a bottom margin of 20px */
+  margin-left: 20px; /* Sets a left margin of 20px */
+  background-color: white; /* Sets the background color of the main element to white */
+  border-top: 20px solid blue; /* Sets a blue border on the top of the main element */
+  padding: 20px; /* Adds some padding inside the main element */
+  max-width: 1200px;
+  max-height: 1400px;
+}
 /********************************************/
 
 
