@@ -109,7 +109,7 @@ main img {
 main {
   background-color: white;
  
-  padding: 20px;
+  
   overflow: auto; /* Add scrollbars if content exceeds max-height */
   justify-content: center;
   border: 10px solid blue;
