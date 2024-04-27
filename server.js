@@ -12,9 +12,8 @@ const app = express()
 const static = require("./routes/static")
 const path = require("path");
 app.set('view engine', 'ejs');
-app.get('/', (req, res) => {
-  res.render('index');
-});
+app.use(expressLayouts);
+
 
 
 
