@@ -1,24 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <%- include('../partials/head') %>
-</head>
+<%- include('../partials/head') %>
+
 <body>
-  <div id="wrapper"> 
-  <header>
     <%- include('../partials/header') %>
-    <nav>
-      <%- include('../partials/navigation') %>
-    </nav>
-  </header>
-  
-  <main>
-    <%- body %>
-  </main>
-  
-  <footer>
-    <%- include('../partials/footer') %>
-  </footer>
-</div>
+    <div class="header">
+        <%- include('../partials/navigation') %>
+    </div>
+    <div id="wrapper">   
+        <main>
+         
+                  <%- body %>
+ 
+        </main>
+        <%- include('../partials/footer') %>
+    </div>
+    
 </body>
+
 </html>
