@@ -106,6 +106,13 @@ main img {
   max-width: 100%;
   
 }
+/**************** BUTTONS **********************/
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+/********************************************/
+
 
 .container {
   position: relative;
