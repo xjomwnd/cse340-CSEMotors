@@ -60,7 +60,7 @@ nav {
 
 nav ul {
   display: flex;
-  background-color: #08010ecd;
+  background-color: #b361facd;
   list-style-type: none;
   margin: 0;
   padding: 20px;
@@ -117,7 +117,7 @@ main {
   background-color: white;
   overflow: auto; /* Add scrollbars if content exceeds max-height */
   justify-content: center;
-  border: 5px solid rgb(145, 180, 249);
+  border: 5px solid rgb(107, 153, 247);
 }
 
 
@@ -146,7 +146,7 @@ main {
   text-align: center;
   max-width: 80%;
   color: #ffffff;
-  background-color: #4c96d7;
+  background-color: #78baf4;
   text-decoration: none;
 }
 
