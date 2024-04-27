@@ -116,6 +116,23 @@ main {
   border-top: 20px solid blue; /* Sets a blue border on the top of the main element */
   padding: 20px; /* Adds some padding inside the main element */
 }
+
+main {
+  background-color: white;
+  border: 10px solid blue;
+  padding: 20px;
+  overflow: auto; /* Add scrollbars if content exceeds max-height */
+  justify-content: center;
+}
+
+/* For a blue margin */
+main {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  overflow: auto; /* Add scrollbars if content exceeds max-height */
+  justify-content: center;
+}
 /********************************************/
 
 
