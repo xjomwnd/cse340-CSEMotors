@@ -27,7 +27,7 @@ body {
 
 /* Code for the header */
 header {
-  padding: 15px;
+  padding: 10px;
   background-color: #cbf4f8;
 }
 
@@ -47,25 +47,43 @@ header p {
 }
 
 /* Code for the navigation */
-ul {
-  list-style-type: none; /* Remove bullet points from the list */
+nav {
+  clear: both;
+  font-size: 0.5em;
+}
+
+nav ul {
+  display: flex;
+  background-color: #08010ecd;
+  list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 10;
+  overflow: hidden;
 }
 
-li {
-  display: inline; /* Display list items horizontally */
+.nav {
+  text-align: justify;
+  color: hwb(0 95% 3%);
+  padding: 30px;
 }
 
-li a {
+nav li {
+  display: inline;
+  color: hwb(0 95% 3%);
+}
+
+nav li a {
   display: block;
-  padding: 10px 20px; /* Padding around each link */
-  color: white; /* Text color of the links */
-  text-decoration: none; /* Remove underline from links */
+  color: #f5eded;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-li a:hover {
-  background-color: #555; /* Background color of the link on hover */
+nav li a:hover {
+  background-color: #4c96d7;
+  color: #3a3a3a;
+}
 
 /* Code for main */
 main {
