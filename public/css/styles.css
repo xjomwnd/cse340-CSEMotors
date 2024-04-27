@@ -5,30 +5,32 @@
 */
 
 /* Code for the whole page */
-html{
+html {
   box-sizing: border-box;
 }
- 
-*, *:before, *:after{
+
+*, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
   font-family: 'Share Tech', sans-serif;
   font-size: 1.5em;
-  background-color: #f0f0f0;
+  color: var(--white);
+  background-color: var(--white);
   background-image: url("../images/site/checkerboard.jpg");
 }
 
 .page {
   max-width: 100%;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 /* Code for the header */
 header {
   padding: 20px;
-  background-color: #4c96d7;
+  background-color: var(--dark-gray);
+  color: var(--bright-red);
 }
 
 header img {
@@ -54,7 +56,7 @@ nav {
 
 nav ul {
   display: flex;
-  background-color: #3a3a3a;
+  background-color: var(--dark-gray);
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -67,21 +69,21 @@ nav li {
 
 nav li a {
   display: block;
-  color: #ffffff;
+  color: var(--bright-red);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 nav li a:hover {
-  background-color: #4c96d7;
-  color: #3a3a3a;
+  background-color: var(--blue);
+  color: var(--dark-gray);
 }
 
 /* Code for main */
 main {
   padding: 20px;
-  background-color: #ffffff;
+  background-color: var(--white);
 }
 
 main img {
@@ -93,19 +95,19 @@ main img {
 }
 
 .container h2 {
-  color: #4c96d7;
+  color: var(--dark-gray);
 }
 
 .container p {
-  color: #4c96d7;
+  color: var(--dark-gray);
 }
 
 .button {
   padding: 10px;
   text-align: center;
   max-width: 80%;
-  color: #ffffff;
-  background-color: #4c96d7;
+  color: var(--white);
+  background-color: var(--bright-red);
   text-decoration: none;
 }
 
@@ -118,9 +120,9 @@ main img {
 
 .item {
   text-align: center;
-  color: #ffffff;
-  background-color: #4c96d7;
-  border: #3a3a3a solid 2px;
+  color: var(--white);
+  background-color: var(--bright-red);
+  border: var(--dark-gray) solid 2px;
 }
 
 .item img {
@@ -142,7 +144,7 @@ main img {
 footer {
   text-align: center;
   font-size: 0.5em;
-  border-top: solid 5px #3a3a3a;
+  border-top: solid 5px var(--dark-gray);
   padding-bottom: 20px;
   clear: both;
 }
