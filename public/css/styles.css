@@ -176,10 +176,10 @@ main {
 
 /* Code for the footer */
 footer {
-  text-align: center;
+  text-align: left;
   font-size: 0.5em;
-  border-top: solid 5px #060303;
-  background-color: #cbf4f8;
+  border-top: solid 5px #ffffff;
+  background-color: #ffffff;
   padding-bottom: 20px;
   clear: both;
 }
