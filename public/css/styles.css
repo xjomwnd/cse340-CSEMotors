@@ -118,6 +118,9 @@ main {
   overflow: auto; /* Add scrollbars if content exceeds max-height */
   justify-content: center;
   border: 5px solid rgb(107, 153, 247);
+  border-radius: 10px;
+  border-radius: 10px 20px 30px 40px;
+  padding: 20px;
 }
 
 .boundary {
