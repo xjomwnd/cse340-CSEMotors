@@ -60,7 +60,7 @@ nav {
 
 nav ul {
   display: flex;
-  background-color: #b361facd;
+  background-color: rgba(6, 1, 10, 0.599);
   list-style-type: none;
   margin: 0;
   padding: 20px;
