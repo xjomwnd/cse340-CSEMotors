@@ -6,14 +6,47 @@
  * Require Statements
  *************************/
 const express = require("express")
+const expressLayouts = require("express-ejs-layouts")
 const env = require("dotenv").config()
 const app = express()
 const static = require("./routes/static")
+const path = require("path");
+
+// Define the directory where your static files are located
+const publicDirectoryPath = path.join(__dirname, 'public');
+
+// Serve static files from the 'public' directory
+app.use(express.static(publicDirectoryPath));
+
+// Define a route to handle image requests
+app.get('/images/:imageName', (req, res) => {
+    const { imageName } = req.params;
+    // Construct the path to the image file
+    const imagePath = path.join(__dirname, 'public', 'images', imageName);
+    // Send the image file as the response
+    res.sendFile(imagePath);
+});
+
+/* ***********************
+ * View Engine and Templates
+ *************************/
+app.set("view engine", "ejs")
+app.use(expressLayouts)
+app.set("layout", "./layouts/layout") // not at views root
 
 /* ***********************
  * Routes
  *************************/
 app.use(static)
+
+// Add index route handler here
+app.get("/", function(req, res){
+  res.render("index", {title: "Home"})
+})
+
+app.get('/checkerboard', (req, res) => {
+  res.render('checkerboard', { title: 'Checkerboard' });
+});
 
 /* ***********************
  * Local Server Information
