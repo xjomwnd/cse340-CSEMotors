@@ -92,7 +92,7 @@ main {
 
 main img {
   max-width: 80%;
-  min-height: auto;
+  min-height: 100%;
 }
 
 .container {
