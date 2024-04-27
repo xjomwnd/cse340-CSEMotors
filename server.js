@@ -11,11 +11,6 @@ const env = require("dotenv").config()
 const app = express()
 const static = require("./routes/static")
 const path = require("path");
-app.set('view engine', 'ejs');
-app.use(expressLayouts);
-
-
-
 
 // Define the directory where your static files are located
 const publicDirectoryPath = path.join(__dirname, 'public');
