@@ -70,6 +70,8 @@ nav ul {
 nav li {
   display: inline;
   color: hwb(0 95% 3%);
+  margin-right: 20px;
+  
 }
 
 nav li a {
@@ -78,6 +80,7 @@ nav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  text-size-adjust: auto;
 }
 
 nav li a:hover {
