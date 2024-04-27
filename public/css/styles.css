@@ -111,6 +111,21 @@ main img {
   display: flex;
   justify-content: space-between; /* Distribute items evenly along the main axis */
 }
+
+.header-buttons {
+  display: flex;
+  gap: 10px; /* Adjust the gap value as needed */
+  justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+.header-buttons a {
+  background-color: var(--bright-red);
+  color: var(--white);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
 /********************************************/
 
 
