@@ -27,7 +27,7 @@ body {
 
 /* Code for the header */
 header {
-  padding: 10px;
+  padding: 5px;
   background-color: #cbf4f8;
 }
 
@@ -185,6 +185,6 @@ footer {
   font-size: 0.5em;
   border-top: solid 5px #060303;
   background-color: #cbf4f8;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   clear: both;
 }
