@@ -75,7 +75,7 @@ nav li a {
 
 nav li a:hover {
   background-color: #4c96d7;
-  color: #3a3a3a;
+  color: #ea1010;
 }
 
 /* Code for main */
@@ -142,7 +142,7 @@ main img {
 footer {
   text-align: center;
   font-size: 0.5em;
-  border-top: solid 5px #df0909;
+  border-top: solid 5px #0a0000;
   background-color: #4c96d7;
   padding-bottom: 20px;
   clear: both;
