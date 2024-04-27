@@ -50,6 +50,7 @@ header p {
 nav {
   clear: both;
   font-size: 0.5em;
+  text-align: center;
 }
 
 nav ul {
@@ -62,7 +63,7 @@ nav ul {
 }
 
 .nav {
-  text-align: justify;
+  text-align: center;
   color: hwb(0 95% 3%);
   padding: 30px;
   margin-right: 20px;
@@ -72,6 +73,7 @@ nav li {
   display: inline;
   color: hwb(0 95% 3%);
   margin-right: 20px;
+  text-align: center;
   
 }
 
@@ -109,7 +111,7 @@ main {
   background-color: white;
   overflow: auto; /* Add scrollbars if content exceeds max-height */
   justify-content: center;
-  border: 10px solid rgb(168, 222, 232);
+  border: 5px solid rgb(145, 180, 249);
 }
 
 
