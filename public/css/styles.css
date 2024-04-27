@@ -40,6 +40,11 @@ header p {
   float: right;
 }
 
+#top-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .name-label {
   font-size: 0.6em;
   clear: both;
