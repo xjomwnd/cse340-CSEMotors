@@ -44,7 +44,7 @@ main {
   background-color: white;
   border: 10px solid blue;
   padding: 20px;
-  max-width: 992px; /* Set the maximum width */
+  max-width: 1000px; /* Set the maximum width */
   max-height:1200px; /* Set the maximum height */
   overflow: auto; /* Add scrollbars if content exceeds max-height */
   justify-content: center;
@@ -55,7 +55,7 @@ main {
   background-color: white;
   margin: 20px;
   padding: 20px;
-  max-width: 992px; /* Set the maximum width */
+  max-width: 1000px; /* Set the maximum width */
   max-height: 1200px; /* Set the maximum height */
   overflow: auto; /* Add scrollbars if content exceeds max-height */
   justify-content: center;
