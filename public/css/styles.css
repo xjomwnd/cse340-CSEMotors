@@ -109,7 +109,7 @@ main {
   background-color: white;
   overflow: auto; /* Add scrollbars if content exceeds max-height */
   justify-content: center;
-  border: 10px solid blue;
+  border: 10px solid rgb(168, 222, 232);
 }
 
 
