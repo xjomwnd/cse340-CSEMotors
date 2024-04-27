@@ -57,14 +57,14 @@ nav ul {
   background-color: #08010ecd;
   list-style-type: none;
   margin: 0;
-  padding: 10;
+  padding: 0;
   overflow: hidden;
 }
 
 .nav {
   text-align: justify;
   color: hwb(0 95% 3%);
-  padding: 5px;
+  padding: 15px;
 }
 
 nav li {
