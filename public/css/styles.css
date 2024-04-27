@@ -102,7 +102,7 @@ main {
 }
 
 .main {
-  max-width: 75%; /* Set a maximum width */
+  max-width: 80%; /* Set a maximum width */
   max-height: auto;
  
 }
@@ -154,7 +154,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
-  width: 75%;
+  width: 80%;
 }
 
 .item {
