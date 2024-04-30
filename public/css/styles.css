@@ -110,7 +110,7 @@ main {
   padding: 20px;
 }
 
-main {
+.main {
   width: 700px; /* Set a fixed width */
   min-height: 900px; /* Set a minimum height */
   position: absolute;
