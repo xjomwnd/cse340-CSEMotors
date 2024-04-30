@@ -116,6 +116,13 @@ main {
   text-align: center; /* Center text horizontally */
 }
 
+main img {
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Ensure aspect ratio is maintained */
+  display: block; /* Ensure images behave as block elements */
+  margin: 0 auto; /* Center images horizontally */
+}
+
 .container {
   width: 90%; /* Set a percentage width */
   min-height: 70vh; /* Set a minimum height */
@@ -124,6 +131,14 @@ main {
   margin: 0 auto; /* Center the container horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
   text-align: center; /* Center text horizontally */
+}
+
+.container img,
+main img {
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Ensure aspect ratio is maintained */
+  display: block; /* Ensure images behave as block elements */
+  margin: 0 auto; /* Center images horizontally */
 }
 
 .boundary {
