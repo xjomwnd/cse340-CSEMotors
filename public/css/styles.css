@@ -110,17 +110,7 @@ main {
   padding: 20px;
 }
 
-main {
-    max-width: 100%; /* Set a maximum width */
-  min-height: 90%; /* Set a minimum height */
-  max-height: 90vh; /* Set a maximum height to keep it within the viewport */
-  height: auto; /* Allow the container to expand vertically */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
-}
+
 
 
 .boundary {
@@ -154,7 +144,6 @@ main {
   transform: translate(-50%, -50%);
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
 }
-
 
 .button {
   display: flex;
