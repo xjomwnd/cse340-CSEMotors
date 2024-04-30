@@ -111,8 +111,8 @@ main {
 }
 
 .main {
-    max-width: 90%; /* Set a maximum width */
-  min-height: 70%; /* Set a minimum height */
+    max-width: 80%; /* Set a maximum width */
+  min-height: 90%; /* Set a minimum height */
   max-height: 90vh; /* Set a maximum height to keep it within the viewport */
   height: auto; /* Allow the container to expand vertically */
   position: absolute;
@@ -144,8 +144,8 @@ main {
 }
 
 .container {
-  width: 90%; /* Set a fixed width */
-  min-height: 70%; /* Set a minimum height */
+  width: 80%; /* Set a fixed width */
+  min-height: 90%; /* Set a minimum height */
   max-height: 90vh; /* Set a maximum height to keep it within the viewport */
   height: auto; /* Allow the container to expand vertically */
   position: absolute;
