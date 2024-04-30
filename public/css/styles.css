@@ -113,6 +113,7 @@ main {
   height: auto; /* Allow the main content to expand vertically */
   margin: 0 auto; /* Center the main content horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
+  text-align: center; /* Center text horizontally */
 }
 
 .container {
@@ -122,6 +123,7 @@ main {
   height: auto; /* Allow the container to expand vertically */
   margin: 0 auto; /* Center the container horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
+  text-align: center; /* Center text horizontally */
 }
 
 .boundary {
