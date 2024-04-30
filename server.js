@@ -12,6 +12,10 @@ const app = express()
 const static = require("./routes/static")
 const path = require("path");
 
+app.get('/', (req, res) => {
+  res.render('index', { title: 'Home' });
+});
+
 // Define the directory where your static files are located
 const publicDirectoryPath = path.join(__dirname, 'public');
 
@@ -20,17 +24,15 @@ app.use(express.static(publicDirectoryPath));
 
 // Define a route to handle image requests
 app.get('/images/:imageName', (req, res) => {
-    const { imageName } = req.params;
-    // Construct the path to the image file
-    const imagePath = path.join(__dirname, 'public', 'images', imageName);
-    // Open the image file
-    open(imagePath).then(() => {
-      console.log(`Opened ${imagePath}`);
-      res.send(`Opened ${imageName}`);
-    }).catch(error => {
-      console.error(`Unable to open ${imagePath}: ${error}`);
-      res.status(500).send('Unable to open image');
-    });
+  const { imageName } = req.params;
+  const imagePath = path.join(__dirname, 'public', 'images', imageName);
+
+  try {
+    res.sendFile(imagePath);
+  } catch (err) {
+    console.error(`Error serving ${imagePath}: ${err}`);
+    res.status(500).send('Error serving the requested image');
+  }
 });
 
 // Other route handlers...
