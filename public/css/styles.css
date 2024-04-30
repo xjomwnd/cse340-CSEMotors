@@ -5,11 +5,13 @@
 */
 
 /* Code for the whole page */
-html{
+html {
   box-sizing: border-box;
 }
- 
-*, *:before, *:after{
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -21,7 +23,6 @@ body {
 }
 
 .page {
- 
   background-color: #ffffff;
 }
 
@@ -79,7 +80,6 @@ nav li {
   color: hwb(0 95% 3%);
   margin-right: 20px;
   text-align: center;
-  
 }
 
 nav li a {
@@ -103,15 +103,12 @@ main {
 
 .main {
   max-width: 80%; /* Set a maximum width */
-  max-height: auto;
- 
 }
-
 
 main img {
   max-width: 100%;
-  
 }
+
 /* For a blue margin */
 main {
   background-color: white;
@@ -119,23 +116,16 @@ main {
   justify-content: center;
   border: 5px solid rgb(107, 153, 247);
   border-radius: 10px;
-  border-radius: 10px 20px 30px 40px;
   padding: 20px;
 }
 
 .boundary {
   border-radius: 10px; /* Adjust the value to control the curve radius */
-  border-radius: 10px 20px 30px 40px; /* top-left, top-right, bottom-right, bottom-left*/
-  border: 5px solid solid rgb(107, 153, 247); /* Add a border for clarity */
+  border: 5px solid rgb(107, 153, 247); /* Add a border for clarity */
   padding: 20px; /* Add padding for visual space */
 }
 
-
-
-
-
 /********************************************/
-
 
 .container {
   position: relative;
