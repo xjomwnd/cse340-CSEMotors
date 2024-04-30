@@ -11,6 +11,8 @@ const env = require("dotenv").config()
 const app = express()
 const static = require("./routes/static")
 const path = require("path");
+const open = require('open').default;
+
 
 // Define the directory where your static files are located
 const publicDirectoryPath = path.join(__dirname, 'public');
@@ -27,7 +29,7 @@ app.get('/images/:imageName', (req, res) => {
     res.sendFile(imagePath);
 });
 /*================= images ===================*/
-const open = require('open');
+const opn = require('opn');
 
 // Specify the path to the image file
 const imagePath = 'path/to/your/image.jpg';
