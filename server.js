@@ -11,8 +11,7 @@ const env = require("dotenv").config()
 const app = express()
 const static = require("./routes/static")
 const path = require("path");
-const open = require('open').default;
-
+const open = require('open');
 
 // Define the directory where your static files are located
 const publicDirectoryPath = path.join(__dirname, 'public');
@@ -25,21 +24,20 @@ app.get('/images/:imageName', (req, res) => {
     const { imageName } = req.params;
     // Construct the path to the image file
     const imagePath = path.join(__dirname, 'public', 'images', imageName);
-    // Send the image file as the response
-    res.sendFile(imagePath);
+    // Open the image file
+    open(imagePath).then(() => {
+      console.log(`Opened ${imagePath}`);
+      res.send(`Opened ${imageName}`);
+    }).catch(error => {
+      console.error(`Unable to open ${imagePath}: ${error}`);
+      res.status(500).send('Unable to open image');
+    });
 });
-/*================= images ===================*/
-const opn = require('opn');
 
-// Specify the path to the image file
-const imagePath = 'path/to/your/image.jpg';
+// Other route handlers...
 
-// Open the image file
-open(imagePath).then(() => {
-  console.log(`Opened ${imagePath}`);
-}).catch(error => {
-  console.error(`Unable to open ${imagePath}: ${error}`);
-});
+
+
 /* ***********************
  * View Engine and Templates
  *************************/
