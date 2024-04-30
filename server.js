@@ -11,7 +11,7 @@ const env = require("dotenv").config()
 const app = express()
 const static = require("./routes/static")
 const path = require("path");
-const { default: open } = require('open');
+import open from 'open';
 
 // Define the directory where your static files are located
 const publicDirectoryPath = path.join(__dirname, 'public');
