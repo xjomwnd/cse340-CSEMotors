@@ -96,8 +96,6 @@ nav li a:hover {
   color: #3a3a3a;
 }
 
-
-
 /* For a blue margin */
 main {
   background-color: white;
@@ -106,6 +104,18 @@ main {
   border: 5px solid rgb(107, 153, 247);
   border-radius: 10px;
   padding: 20px;
+}
+
+.main {
+  width: 300px; /* Set a fixed width */
+  min-height: 500px; /* Set a minimum height */
+  max-height: 90vh; /* Set a maximum height to keep it within the viewport */
+  height: auto; /* Allow the container to expand vertically */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
 }
 
 .boundary {
@@ -128,17 +138,6 @@ main {
   color: #4c96d7;
 }
 
-.container {
-  width: 200px; /* Set a fixed width */
-  min-height: 500px; /* Set a minimum height */
-  max-height: 90vh; /* Set a maximum height to keep it within the viewport */
-  height: auto; /* Allow the container to expand vertically */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
-}
 
 .button {
   display: flex;
