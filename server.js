@@ -11,6 +11,16 @@ const env = require("dotenv").config()
 const app = express()
 const static = require("./routes/static")
 const path = require("path");
+const morgan = require('morgan');
+const bodyParser = require('body-parser');
+
+// Logging middleware
+app.use(morgan('dev'));
+
+// Request parsing middleware
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
 
 app.get('/', (req, res) => {
   res.render('index', { title: 'Home' });
