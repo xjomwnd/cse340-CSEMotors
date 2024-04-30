@@ -107,7 +107,7 @@ main {
 }
 
 main {
-  width: 80%; /* Set a percentage width */
+  width: 90%; /* Set a percentage width */
   min-height: 70vh; /* Set a minimum height */
   max-height: 90vh; /* Set a maximum height to keep it within the viewport */
   height: auto; /* Allow the main content to expand vertically */
@@ -117,7 +117,7 @@ main {
 }
 
 .container {
-  width: 80%; /* Set a percentage width */
+  width: 90%; /* Set a percentage width */
   min-height: 70vh; /* Set a minimum height */
   max-height: 90vh; /* Set a maximum height to keep it within the viewport */
   height: auto; /* Allow the container to expand vertically */
