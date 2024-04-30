@@ -16,6 +16,7 @@
     "express": "^4.19.2",
     "express-ejs-layouts": "^2.5.1",
     "open": "^10.1.0",
+    "opn": "^6.0.0",
     "pg": "^8.11.5"
   },
   "devDependencies": {
