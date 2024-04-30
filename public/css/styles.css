@@ -132,20 +132,50 @@ main img {
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
   text-align: center; /* Center text horizontally */
 }
-
-.container img,
-
-
+/* ************** Using Absolute Positioning:************* */
 .container {
-  text-align: center;
+  position: relative;
 }
 
+.container img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%; /* Ensure image does not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+/* ************** Using Margin Auto: *********** */
 .container img {
   display: block;
   margin: 0 auto; /* Center the image horizontally */
   max-width: 100%; /* Ensure image does not exceed container width */
   height: auto; /* Maintain aspect ratio */
 }
+/* ***************** Using CSS Flexbox:************ */             
+.container {
+  display: flex;
+  justify-content: center; /* Horizontal alignment */
+  align-items: center; /* Vertical alignment */
+}
+
+.container img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+/* ************ Using CSS Grid: *********** */
+.container {
+  display: grid;
+  place-items: center; /* Center items horizontally and vertically */
+}
+
+.container img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+/* ************    ************** */
 
 
 .boundary {
