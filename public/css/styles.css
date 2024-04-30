@@ -114,7 +114,6 @@ main {
   max-width: 95%; /* Set a maximum width */
 min-height: 100%; /* Set a minimum height */
 max-height: 90vh; /* Set a maximum height to keep it within the viewport */
-height: auto; /* Allow the container to expand vertically */
 position: absolute;
 top: 50%;
 left: 50%;
@@ -148,7 +147,6 @@ overflow-y: auto; /* Add vertical scrollbar if content exceeds container height 
   width: 95%; /* Set a fixed width */
   min-height: 100%; /* Set a minimum height */
   max-height: 90vh; /* Set a maximum height to keep it within the viewport */
-  height: auto; /* Allow the container to expand vertically */
   position: absolute;
   top: 50%;
   left: 50%;
