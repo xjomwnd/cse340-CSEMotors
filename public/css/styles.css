@@ -110,19 +110,6 @@ main {
   padding: 20px;
 }
 
-main {
-  max-width: 95%; /* Set a maximum width */
-min-height: 100%; /* Set a minimum height */
-max-height: 90vh; /* Set a maximum height to keep it within the viewport */
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
-}
-
-
-
 .boundary {
   border-radius: 10px; /* Adjust the value to control the curve radius */
   border: 5px solid rgb(107, 153, 247); /* Add a border for clarity */
@@ -144,16 +131,16 @@ overflow-y: auto; /* Add vertical scrollbar if content exceeds container height 
 }
 
 .container {
-  width: 95%; /* Set a fixed width */
-  min-height: 100%; /* Set a minimum height */
+  width: 300px; /* Set a fixed width */
+  min-height: 500px; /* Set a minimum height */
   max-height: 90vh; /* Set a maximum height to keep it within the viewport */
+  height: auto; /* Allow the container to expand vertically */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
 }
-
 
 .button {
   display: flex;
