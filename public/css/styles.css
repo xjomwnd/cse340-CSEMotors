@@ -112,7 +112,8 @@ main {
 
 main {
   width: 700px; /* Set a fixed width */
-  min-height: 900px; /* Set a minimum height */
+  min-height: 500px; /* Set a minimum height */
+  height: auto;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -142,7 +143,7 @@ main {
 
 .container {
   width: 700px; /* Set a fixed width */
-  min-height: 900px; /* Set a minimum height */
+  min-height: 500px; /* Set a minimum height */
   position: absolute;
 }
 
