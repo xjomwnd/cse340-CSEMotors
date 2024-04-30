@@ -96,10 +96,7 @@ nav li a:hover {
   color: #3a3a3a;
 }
 
-/* Code for main */
-main {
-  background-color: #ffffff;
-}
+
 
 .main {
   max-width: 70%; /* Set a maximum width */
