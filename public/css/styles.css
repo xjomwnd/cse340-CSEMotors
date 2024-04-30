@@ -110,7 +110,7 @@ main {
   padding: 20px;
 }
 
-.main {
+main {
     max-width: 80%; /* Set a maximum width */
   min-height: 90%; /* Set a minimum height */
   max-height: 90vh; /* Set a maximum height to keep it within the viewport */
