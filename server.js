@@ -26,7 +26,18 @@ app.get('/images/:imageName', (req, res) => {
     // Send the image file as the response
     res.sendFile(imagePath);
 });
+/*================= images ===================*/
+const open = require('open');
 
+// Specify the path to the image file
+const imagePath = 'path/to/your/image.jpg';
+
+// Open the image file
+open(imagePath).then(() => {
+  console.log(`Opened ${imagePath}`);
+}).catch(error => {
+  console.error(`Unable to open ${imagePath}: ${error}`);
+});
 /* ***********************
  * View Engine and Templates
  *************************/
