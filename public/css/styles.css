@@ -136,6 +136,12 @@ main {
   color: #4c96d7;
 }
 
+.container {
+  width: 300px; /* Set a fixed width */
+  min-height: 500px; /* Set a minimum height */
+  height: auto; /* Allow the container to expand vertically */
+}
+
 .button {
   display: flex;
   padding: 10px;
