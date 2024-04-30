@@ -110,7 +110,7 @@ main {
   padding: 20px;
 }
 
-.main {
+main {
   width: 700px; /* Set a fixed width */
   min-height: 900px; /* Set a minimum height */
   position: absolute;
@@ -138,6 +138,12 @@ main {
 
 .container p {
   color: #4c96d7;
+}
+
+.container {
+  width: 700px; /* Set a fixed width */
+  min-height: 900px; /* Set a minimum height */
+  position: absolute;
 }
 
 .button {
