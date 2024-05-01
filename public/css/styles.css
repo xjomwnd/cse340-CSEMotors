@@ -85,7 +85,7 @@ nav li {
 nav li a {
   display: block;
   color: #f5eded;
-  text-align: center;
+  text-align: flex;
   padding: 14px 16px;
   text-decoration: none;
   text-size-adjust: auto;
