@@ -97,14 +97,6 @@ main {
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
   text-align: flex; /* Center text horizontally */
 }
-.container {
-  width: 60%; /* Set a percentage width */
-  min-height: 70vh; /* Set a minimum height */
-  max-height: 80vh; /* Set a maximum height to keep it within the viewport */
-  margin: 0 auto; /* Center the container horizontally */
-  overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
-  place-items: flex;
-}
 /* ************** Using Absolute Positioning:************* */
 .container {
   position: relative;
