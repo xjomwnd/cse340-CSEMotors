@@ -89,7 +89,7 @@ main {
   border-radius: 10px;
   padding: 20px;
 }
-.container {
+.main {
   width: 60%; /* Set a percentage width */
   min-height: 70cm; /* Set a minimum height */
   max-height: 80vh; /* Set a maximum height to keep it within the viewport */
