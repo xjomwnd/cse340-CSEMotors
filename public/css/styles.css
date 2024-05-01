@@ -90,18 +90,18 @@ main {
   padding: 20px;
 }
 main {
-  width: 70%; /* Set a percentage width */
-  min-height: 70vh; /* Set a minimum height */
-  max-height: 90vh; /* Set a maximum height to keep it within the viewport */
+  width: 60%; /* Set a percentage width */
+  min-height: 6cm; /* Set a minimum height */
+  max-height: 80vh; /* Set a maximum height to keep it within the viewport */
   height: auto; /* Allow the main content to expand vertically */
   margin: 0 auto; /* Center the main content horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
   text-align: flex; /* Center text horizontally */
 }
 .container {
-  width: 70%; /* Set a percentage width */
-  min-height: 70vh; /* Set a minimum height */
-  max-height: 90vh; /* Set a maximum height to keep it within the viewport */
+  width: 60%; /* Set a percentage width */
+  min-height: 60vh; /* Set a minimum height */
+  max-height: 80vh; /* Set a maximum height to keep it within the viewport */
   height: auto; /* Allow the container to expand vertically */
   margin: 0 auto; /* Center the container horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
