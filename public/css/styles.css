@@ -87,7 +87,7 @@ main {
   border: 5px solid rgb(107, 153, 247);
   border-radius: 10px;
   padding: 20px;
-  width: 90%; /* Set a percentage width */
+  width: 70%; /* Set a percentage width */
   min-height: 70vh; /* Set a minimum height */
   max-height: 90vh; /* Set a maximum height to keep it within the viewport */
   height: auto; /* Allow the main content to expand vertically */
@@ -108,7 +108,7 @@ main img,
   display: grid;
   place-items: center; /* Center items horizontally and vertically */
   position: relative;
-  width: 90%; /* Set a percentage width */
+  width: 70%; /* Set a percentage width */
   min-height: 70vh; /* Set a minimum height */
   max-height: 90vh; /* Set a maximum height to keep it within the viewport */
   height: auto; /* Allow the container to expand vertically */
