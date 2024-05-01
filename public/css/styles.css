@@ -81,15 +81,7 @@ nav li a:hover {
   color: #3a3a3a;
 }
 /*                 */
-/* Code for main */
-main {
-  padding: 20px;
-}
 
-main img {
-  max-width: 100%;
-}
-/*                    */
 /* For a blue margin */
 main {
   background-color: white;
