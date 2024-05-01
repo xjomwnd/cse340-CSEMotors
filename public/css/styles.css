@@ -131,6 +131,8 @@ main img,
 .button,
 .item {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
   max-width: 80%;
   color: #ffffff;
