@@ -79,13 +79,13 @@ nav li {
   display: inline;
   color: hwb(0 95% 3%);
   margin-right: 20px;
-  text-align: center;
+  text-align: flex;
 }
 
 nav li a {
   display: block;
   color: #f5eded;
-  text-align: flex;
+  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   text-size-adjust: auto;
@@ -100,7 +100,7 @@ nav li a:hover {
 main {
   background-color: white;
   overflow: auto; /* Add scrollbars if content exceeds max-height */
-  justify-content: center;
+  justify-content: flex;
   border: 5px solid rgb(107, 153, 247);
   border-radius: 10px;
   padding: 20px;
@@ -113,7 +113,7 @@ main {
   height: auto; /* Allow the main content to expand vertically */
   margin: 0 auto; /* Center the main content horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
-  text-align: center; /* Center text horizontally */
+  text-align: flex; /* Center text horizontally */
 }
 
 main img {
@@ -130,7 +130,7 @@ main img {
   height: auto; /* Allow the container to expand vertically */
   margin: 0 auto; /* Center the container horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
-  place-items: center;
+  place-items: flex;
 }
 /* ************** Using Absolute Positioning:************* */
 .container {
@@ -159,7 +159,7 @@ main img {
 /* ************ Using CSS Grid: *********** */
 .container {
   display: grid;
-  place-items: center; /* Center items horizontally and vertically */
+  place-items: flex; /* Center items horizontally and vertically */
 }
 
 .container img {
