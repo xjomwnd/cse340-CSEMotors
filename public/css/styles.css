@@ -3,6 +3,7 @@
    font-family: 'Electrolize', sans-serif;
    font-family: 'Share Tech', sans-serif;
 */
+
 /* Code for the whole page */
 html {
   box-sizing: border-box;
@@ -15,12 +16,12 @@ html {
 body {
   font-family: 'Share Tech', sans-serif;
   font-size: 1.5em;
-  background-color: #f0f0f0;
-  background-image: url("../images/site/checkerboard.jpg");
+  background: #f0f0f0 url("../images/site/checkerboard.jpg");
 }
 .page {
   background-color: #ffffff;
 }
+
 /* Code for the header */
 header {
   padding: 5px;
@@ -42,6 +43,7 @@ header p {
   clear: both;
   float: right;
 }
+
 /* Code for the navigation */
 nav {
   clear: both;
@@ -56,17 +58,14 @@ nav ul {
   padding: 20px;
   overflow: hidden;
 }
-.nav {
-  text-align: center;
-  color: hwb(0 95% 3%);
-  padding: 20px;
-  margin-right: 20px;
-}
+.nav,
 nav li {
-  display: inline;
   color: hwb(0 95% 3%);
   margin-right: 20px;
   text-align: flex;
+}
+.nav {
+  padding: 20px;
 }
 nav li a {
   display: block;
@@ -80,84 +79,41 @@ nav li a:hover {
   background-color: #4c96d7;
   color: #3a3a3a;
 }
-/*                 */
 
 /* For a blue margin */
 main {
   background-color: white;
   overflow: auto; /* Add scrollbars if content exceeds max-height */
-  justify-content: flex;
   border: 5px solid rgb(107, 153, 247);
   border-radius: 10px;
   padding: 20px;
-}
-main {
   width: 90%; /* Set a percentage width */
   min-height: 70vh; /* Set a minimum height */
   max-height: 90vh; /* Set a maximum height to keep it within the viewport */
   height: auto; /* Allow the main content to expand vertically */
   margin: 0 auto; /* Center the main content horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
-  text-align: flex; /* Center text horizontally */
-  place-items: flex;
+  text-align: center; /* Center text horizontally */
+  place-items: center;
 }
-main img {
+main img,
+.container img {
   max-width: 100%; /* Make images responsive */
   height: auto; /* Ensure aspect ratio is maintained */
-  display: flex; /* Ensure images behave as block elements */
+  display: block; /* Ensure images behave as block elements */
   margin: 0 auto; /* Center images horizontally */
-  place-items: flex;
 }
+
 .container {
+  display: grid;
+  place-items: center; /* Center items horizontally and vertically */
+  position: relative;
   width: 90%; /* Set a percentage width */
   min-height: 70vh; /* Set a minimum height */
   max-height: 90vh; /* Set a maximum height to keep it within the viewport */
   height: auto; /* Allow the container to expand vertically */
   margin: 0 auto; /* Center the container horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
-  place-items: flex;
-}
-/* ************** Using Absolute Positioning:************* */
-.container {
-  position: relative;
-}
-.container img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 100%; /* Ensure image does not exceed container width */
-  height: auto; /* Maintain aspect ratio */
-}
-
-/* ************** Using Margin Auto: *********** */
-.container img {
-  display: block;
-  margin: 0 auto; /* Center the image horizontally */
-  max-width: 100%; /* Ensure image does not exceed container width */
-  height: auto; /* Maintain aspect ratio */
-}
-/* ***************** Using CSS Flexbox:************ */             
-/* ************ Using CSS Grid: *********** */
-.container {
-  display: grid;
-  place-items: flex; /* Center items horizontally and vertically */
-}
-.container img {
-  max-width: 100%; /* Ensure image does not exceed container width */
-  height: auto; /* Maintain aspect ratio */
-  place-items: flex;
-}
-/* ************    ************** */
-
-.boundary {
-  border-radius: 10px; /* Adjust the value to control the curve radius */
-  border: 5px solid rgb(107, 153, 247); /* Add a border for clarity */
-  padding: 20px; /* Add padding for visual space */
-}
-/********************************************/
-.container {
-  position: relative;
 }
 .container h2 {
   color: #09944f;
@@ -166,39 +122,37 @@ main img {
   color: #4c96d7;
 }
 
-.button {
+.button,
+.item {
   display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-  text-align: center;
   max-width: 80%;
   color: #ffffff;
-  background-color: #78baf4;
-  text-decoration: none;
 }
-.upgrade {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
-  width: 80%;
+.button {
+  background-color: #78baf4;
 }
 .item {
-  text-align: center;
-  color: #ffffff;
   background-color: #4c96d7;
   border: #3a3a3a solid 2px;
 }
-.item img {
-  display: block;
-  margin: 0 auto;
+.upgrade {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  width: 80%;
 }
 #pass-label {
   color: red;
   font-size: 0.5em;
 }
 .reviews p {
-  border: black solid 2px;
+  border: 2px solid black;
   margin-top: 10px;
 }
+
 /* Code for the footer */
 footer {
   text-align: left;
