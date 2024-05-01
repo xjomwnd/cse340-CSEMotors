@@ -80,6 +80,29 @@ nav li a:hover {
   background-color: #4c96d7;
   color: #3a3a3a;
 }
+/*                 */
+/* Code for main */
+main {
+  padding: 20px;
+}
+
+main img {
+  max-width: 100%;
+}
+
+.container {
+  position: relative;
+}
+
+.container h2 {
+  color: #4c96d7;
+}
+
+.container p {
+  color: #4c96d7;
+}
+
+/*                    */
 /* For a blue margin */
 main {
   background-color: white;
