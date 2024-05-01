@@ -89,19 +89,31 @@ main {
   border-radius: 10px;
   padding: 20px;
 }
-.main {
-  width: 60%; /* Set a percentage width */
-  min-height: 70cm; /* Set a minimum height */
-  max-height: 80vh; /* Set a maximum height to keep it within the viewport */
+main {
+  width: 90%; /* Set a percentage width */
+  min-height: 70vh; /* Set a minimum height */
+  max-height: 90vh; /* Set a maximum height to keep it within the viewport */
+  height: auto; /* Allow the main content to expand vertically */
   margin: 0 auto; /* Center the main content horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
   text-align: flex; /* Center text horizontally */
 }
-/* ************** Using Absolute
-
-
-
- Positioning:************* */
+main img {
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Ensure aspect ratio is maintained */
+  display: block; /* Ensure images behave as block elements */
+  margin: 0 auto; /* Center images horizontally */
+}
+.container {
+  width: 90%; /* Set a percentage width */
+  min-height: 70vh; /* Set a minimum height */
+  max-height: 90vh; /* Set a maximum height to keep it within the viewport */
+  height: auto; /* Allow the container to expand vertically */
+  margin: 0 auto; /* Center the container horizontally */
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
+  place-items: flex;
+}
+/* ************** Using Absolute Positioning:************* */
 .container {
   position: relative;
 }
@@ -113,6 +125,25 @@ main {
   max-width: 100%; /* Ensure image does not exceed container width */
   height: auto; /* Maintain aspect ratio */
 }
+
+/* ************** Using Margin Auto: *********** */
+.container img {
+  display: block;
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 100%; /* Ensure image does not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+/* ***************** Using CSS Flexbox:************ */             
+/* ************ Using CSS Grid: *********** */
+.container {
+  display: grid;
+  place-items: flex; /* Center items horizontally and vertically */
+}
+.container img {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  height: auto; /* Maintain aspect ratio */
+}
+/* ************    ************** */
 
 .boundary {
   border-radius: 10px; /* Adjust the value to control the curve radius */
