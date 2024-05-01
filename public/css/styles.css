@@ -3,62 +3,51 @@
    font-family: 'Electrolize', sans-serif;
    font-family: 'Share Tech', sans-serif;
 */
-
 /* Code for the whole page */
 html {
   box-sizing: border-box;
 }
-
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
-
 body {
   font-family: 'Share Tech', sans-serif;
   font-size: 1.5em;
   background-color: #f0f0f0;
   background-image: url("../images/site/checkerboard.jpg");
 }
-
 .page {
   background-color: #ffffff;
 }
-
 /* Code for the header */
 header {
   padding: 5px;
   background-color: #ffffff;
 }
-
 header img {
   display: block;
   float: left;
 }
-
 header p {
   float: right;
 }
-
 #top-header {
   display: flex;
   justify-content: space-between;
 }
-
 .name-label {
   font-size: 0.6em;
   clear: both;
   float: right;
 }
-
 /* Code for the navigation */
 nav {
   clear: both;
   font-size: 0.5em;
   text-align: center;
 }
-
 nav ul {
   display: flex;
   background-color: rgba(14, 10, 17, 0.886);
@@ -67,21 +56,18 @@ nav ul {
   padding: 20px;
   overflow: hidden;
 }
-
 .nav {
   text-align: center;
   color: hwb(0 95% 3%);
   padding: 20px;
   margin-right: 20px;
 }
-
 nav li {
   display: inline;
   color: hwb(0 95% 3%);
   margin-right: 20px;
   text-align: flex;
 }
-
 nav li a {
   display: block;
   color: #f5eded;
@@ -90,12 +76,10 @@ nav li a {
   text-decoration: none;
   text-size-adjust: auto;
 }
-
 nav li a:hover {
   background-color: #4c96d7;
   color: #3a3a3a;
 }
-
 /* For a blue margin */
 main {
   background-color: white;
@@ -105,7 +89,6 @@ main {
   border-radius: 10px;
   padding: 20px;
 }
-
 main {
   width: 90%; /* Set a percentage width */
   min-height: 70vh; /* Set a minimum height */
@@ -115,14 +98,6 @@ main {
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
   text-align: flex; /* Center text horizontally */
 }
-
-main img {
-  max-width: 100%; /* Make images responsive */
-  height: auto; /* Ensure aspect ratio is maintained */
-  display: block; /* Ensure images behave as block elements */
-  margin: 0 auto; /* Center images horizontally */
-}
-
 .container {
   width: 90%; /* Set a percentage width */
   min-height: 70vh; /* Set a minimum height */
@@ -136,7 +111,6 @@ main img {
 .container {
   position: relative;
 }
-
 .container img {
   position: absolute;
   top: 50%;
@@ -146,49 +120,21 @@ main img {
   height: auto; /* Maintain aspect ratio */
 }
 
-
-/* ************** Using Margin Auto: *********** */
-.container img {
-  display: block;
-  margin: 0 auto; /* Center the image horizontally */
-  max-width: 100%; /* Ensure image does not exceed container width */
-  height: auto; /* Maintain aspect ratio */
-}
-/* ***************** Using CSS Flexbox:************ */             
-
-/* ************ Using CSS Grid: *********** */
-.container {
-  display: grid;
-  place-items: flex; /* Center items horizontally and vertically */
-}
-
-.container img {
-  max-width: 100%; /* Ensure image does not exceed container width */
-  height: auto; /* Maintain aspect ratio */
-}
-/* ************    ************** */
-
-
 .boundary {
   border-radius: 10px; /* Adjust the value to control the curve radius */
   border: 5px solid rgb(107, 153, 247); /* Add a border for clarity */
   padding: 20px; /* Add padding for visual space */
 }
-
 /********************************************/
-
 .container {
   position: relative;
 }
-
 .container h2 {
   color: #09944f;
 }
-
 .container p {
   color: #4c96d7;
 }
-
 
 .button {
   display: flex;
@@ -199,36 +145,30 @@ main img {
   background-color: #78baf4;
   text-decoration: none;
 }
-
 .upgrade {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 5px;
   width: 80%;
 }
-
 .item {
   text-align: center;
   color: #ffffff;
   background-color: #4c96d7;
   border: #3a3a3a solid 2px;
 }
-
 .item img {
   display: block;
   margin: 0 auto;
 }
-
 #pass-label {
   color: red;
   font-size: 0.5em;
 }
-
 .reviews p {
   border: black solid 2px;
   margin-top: 10px;
 }
-
 /* Code for the footer */
 footer {
   text-align: left;
