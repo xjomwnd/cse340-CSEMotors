@@ -97,12 +97,14 @@ main {
   margin: 0 auto; /* Center the main content horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
   text-align: flex; /* Center text horizontally */
+  place-items: flex;
 }
 main img {
   max-width: 100%; /* Make images responsive */
   height: auto; /* Ensure aspect ratio is maintained */
-  display: block; /* Ensure images behave as block elements */
+  display: flex; /* Ensure images behave as block elements */
   margin: 0 auto; /* Center images horizontally */
+  place-items: flex;
 }
 .container {
   width: 90%; /* Set a percentage width */
@@ -142,6 +144,7 @@ main img {
 .container img {
   max-width: 100%; /* Ensure image does not exceed container width */
   height: auto; /* Maintain aspect ratio */
+  place-items: flex;
 }
 /* ************    ************** */
 
