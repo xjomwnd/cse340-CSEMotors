@@ -93,9 +93,15 @@ main {
   height: auto; /* Allow the main content to expand vertically */
   margin: 0 auto; /* Center the main content horizontally */
   overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
+  display: flex;
   text-align: center; /* Center text horizontally */
-  place-items: center;
+  align-items: baseline; /* Align items to their baseline */
 }
+
+
+
+
+
 main img,
 .container img {
   max-width: 100%; /* Make images responsive */
@@ -125,8 +131,6 @@ main img,
 .button,
 .item {
   display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 10px;
   max-width: 80%;
   color: #ffffff;
