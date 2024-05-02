@@ -13,6 +13,28 @@ const app = express();
 const static = require("./routes/static");
 const path = require("path");
 
+/* *********** Cherio ************** */
+const cheerio = require('cheerio');
+
+// Assuming your HTML content is stored in a variable called 'htmlContent'
+const htmlContent = `
+    <h3>DMC Delorean Reservations</h3>
+    <p>Reservations Available</p>
+`;
+
+// Load the HTML content into cheerio
+const $ = cheerio.load(htmlContent);
+
+// Select the elements containing reservation information
+const title = $('h3').text();
+const availability = $('p').text();
+
+// Print the reservation information
+console.log(title);         // Output: DMC Delorean Reservations
+console.log(availability);  // Output: Reservations Available
+
+/* ******************************** */
+
 // Define the directory where your static files are located
 const publicDirectoryPath = path.join(__dirname, 'public');
 
