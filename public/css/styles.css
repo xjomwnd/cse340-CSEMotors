@@ -53,7 +53,44 @@ nav li {
   display: inline-block;
   margin: 0 10px;
 }
+/* Main */
+/* For a blue margin */
+main {
+  background-color: white;
+  overflow: auto; /* Add scrollbars if content exceeds max-height */
+  border: 5px solid rgb(107, 153, 247);
+  border-radius: 10px;
+  padding: 20px;
+  width: 70%; /* Set a percentage width */
+  min-height: 70vh; /* Set a minimum height */
+  max-height: 90vh; /* Set a maximum height to keep it within the viewport */
+  height: auto; /* Allow the main content to expand vertically */
+  margin: 0 auto; /* Center the main content horizontally */
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
+  text-align: center; /* Center text horizontally */
+  place-items: center;
+}
+main img,
+.container img {
+  max-width: 100%; /* Make images responsive */
+  height: auto; /* Ensure aspect ratio is maintained */
+  display: block; /* Ensure images behave as block elements */
+  margin: 0 auto; /* Center images horizontally */
+}
+.container {
+  display: grid;
+  place-items: center; /* Center items horizontally and vertically */
+  position: relative;
+  width: 70%; /* Set a percentage width */
+  min-height: 70vh; /* Set a minimum height */
+  max-height: 90vh; /* Set a maximum height to keep it within the viewport */
+  height: auto; /* Allow the container to expand vertically */
+  margin: 0 auto; /* Center the container horizontally */
+  overflow-y: auto; /* Add vertical scrollbar if content exceeds container height */
+}
 
+
+/* //////////////////////////// */
 /* Large Screen Styles (Media Queries) */
 @media only screen and (min-width: 768px) {
   body {
