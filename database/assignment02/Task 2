@@ -1,33 +1,32 @@
--- Create the database cse340joe_aqib if it doesn't exist
-CREATE DATABASE IF NOT EXISTS cse340joe_aqib
-    WITH
-    OWNER = cse340joe
-    ENCODING = 'UTF8'
-    LC_COLLATE = 'en_US.UTF8'
-    LC_CTYPE = 'en_US.UTF8'
-    LOCALE_PROVIDER = 'libc'
-    TABLESPACE = pg_default
-    CONNECTION LIMIT = -1
-    IS_TEMPLATE = False;
+-- Connect to PostgreSQL as the 'postgres' superuser
+-- You will be prompted for the password or it will use the PGPASSWORD environment variable
 
--- Switch to the newly created database
-\c cse340joe_aqib;
+-- Create the 'cse340joe_aqib' database if it doesn't exist
+CREATE DATABASE cse340joe_aqib;
 
--- Set the timezone to 'utc' for the database
-ALTER DATABASE cse340joe_aqib
-    SET "TimeZone" TO 'utc';
+-- Grant privileges to the 'cse340joe' user
+GRANT ALL PRIVILEGES ON DATABASE cse340joe_aqib TO cse340joe;
 
--- Grant privileges on tables to the user cse340joe by altering default privileges
-ALTER DEFAULT PRIVILEGES FOR ROLE postgres
-GRANT ALL ON TABLES TO cse340joe;
+-- Switch to the 'cse340joe_aqib' database as the 'postgres' superuser
+\c postgres
+SELECT pg_terminate_backend(pid) FROM pg_stat_activity WHERE datname = 'cse340joe_aqib';
+\c cse340joe_aqib
 
--- Grant privileges on sequences to the user cse340joe by altering default privileges
-ALTER DEFAULT PRIVILEGES FOR ROLE postgres
-GRANT ALL ON SEQUENCES TO cse340joe;
+-- Create the 'primarytable' table if it doesn't exist
+CREATE TABLE IF NOT EXISTS primarytable (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50)
+);
 
--- Grant execute privileges on functions to the user cse340joe by altering default privileges
-ALTER DEFAULT PRIVILEGES FOR ROLE postgres
-GRANT EXECUTE ON FUNCTIONS TO cse340joe;
+-- Grant all privileges on the 'primarytable' table to the 'cse340joe' user
+GRANT ALL PRIVILEGES ON TABLE primarytable TO cse340joe;
+
+-- Switch to the 'cse340joe' user
+SET ROLE cse340joe;
+
+-- Verify that the 'cse340joe' user can access and modify the 'primarytable' table
+INSERT INTO primarytable (name) VALUES ('Test Entry');
+SELECT * FROM primarytable;
 
 -- Create the 'account' table if it doesn't exist
 CREATE TABLE IF NOT EXISTS account (
