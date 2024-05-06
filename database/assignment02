@@ -1,0 +1,42 @@
+-- Connect to PostgreSQL as the 'postgres' superuser
+-- You will be prompted for the password or it will use the PGPASSWORD environment variable
+
+-- Drop the 'cse340joe_aqib' database if it exists, and then create a new database with the same name
+DROP DATABASE IF EXISTS cse340joe_aqib;
+CREATE DATABASE cse340joe_aqib;
+
+-- Grant privileges to the 'cse340joe' user
+GRANT ALL PRIVILEGES ON DATABASE cse340joe_aqib TO cse340joe;
+
+-- Switch to the 'cse340joe_aqib' database
+\c cse340joe_aqib postgres
+
+-- Create the 'primarytable' table if it doesn't exist
+CREATE TABLE IF NOT EXISTS primarytable (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50)
+);
+
+-- Grant all privileges on the 'primarytable' table to the 'cse340joe' user
+GRANT ALL PRIVILEGES ON TABLE primarytable TO cse340joe;
+
+-- Switch to the 'cse340joe' user
+SET ROLE cse340joe;
+
+-- Verify that the 'cse340joe' user can access and modify the 'primarytable' table
+INSERT INTO primarytable (name) VALUES ('Test Entry');
+SELECT * FROM primarytable;
+
+-- Create the 'account' table if it doesn't exist
+CREATE TABLE IF NOT EXISTS account (
+    account_id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100),
+    password VARCHAR(100),
+    account_type VARCHAR(50)
+);
+
+-- Insert the new record into the 'account' table
+INSERT INTO account (first_name, last_name, email, password, account_type)
+VALUES ('Tony', 'Stark', 'tony@starkent.com', 'Iam1ronM@n', 'Customer');
