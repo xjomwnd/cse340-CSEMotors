@@ -55,37 +55,6 @@ nav li {
 }
 /* Main */
 /* Buttons */
-.button,
-.item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  max-width: 80%;
-  color: #ffffff;
-}
-.button {
-  background-color: #78baf4;
-}
-.item {
-  background-color: #4c96d7;
-  border: #3a3a3a solid 2px;
-}
-.upgrade {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-  width: 80%;
-}
-#pass-label {
-  color: red;
-  font-size: 0.5em;
-}
-.reviews p {
-  border: 2px solid black;
-  margin-top: 10px;
-}
-s
 
 /* BBBBBBBBBBBBTTTTTTTTON */
 /* For a blue margin */
