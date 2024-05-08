@@ -12,6 +12,7 @@ const env = require("dotenv").config();
 const app = express();
 const static = require("./routes/static");
 const path = require("path");
+const baseController = require("./controllers/baseController")
 
 /* *********** Cherio ************** */
 const cheerio = require('cheerio');
