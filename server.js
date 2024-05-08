@@ -72,6 +72,9 @@ app.set("layout", "./layouts/layout"); // not at views root
 app.use(static);
 
 // Add index route handler here
+app.get("/", baseController.buildHome)
+
+
 app.get("/", function(req, res) {
   res.render("index", { title: "Home" });
 });
