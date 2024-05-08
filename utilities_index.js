@@ -2,7 +2,7 @@
 //Flags: CaseSensitive RegExp
 //ContextLines: 1
 
-const invModel = require("../models/inventory-model")
+const Models = require("../models/inventory-model")
 const Util = {}
 
 /* ************************
