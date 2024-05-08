@@ -82,7 +82,11 @@ app.get("/", utilities.handleErrors(baseController.buildHome))
 app.get("/", function(req, res) {
   res.render("index", { title: "Home" });
 });
+// Error handler
 
+
+
+/* ****************************************** */
 app.get('/checkerboard', (req, res) => {
   res.render('checkerboard', { title: 'Checkerboard' });
 });
