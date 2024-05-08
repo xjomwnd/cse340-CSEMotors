@@ -1,6 +1,6 @@
-# Query: 
-# Flags: CaseSensitive RegExp
-# ContextLines: 1
+//Query: 
+//Flags: CaseSensitive RegExp
+//ContextLines: 1
 
 const invModel = require("../models/inventory-model")
 const Util = {}
