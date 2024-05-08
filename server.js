@@ -14,6 +14,7 @@ const static = require("./routes/static");
 const path = require("path");
 const utilities = require("./utilities/")
 const baseController = require("./controllers/baseController")
+const inventoryRoute = require("./routes/inventoryRoute");
 
 /* *********** Cherio ************** */
 const cheerio = require('cheerio');
