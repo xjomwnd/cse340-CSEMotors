@@ -74,7 +74,10 @@ app.use(static);
 
 // Add index route handler here
 app.get("/", baseController.buildHome)
+utilities.handleErrors(baseController.buildHome)
 
+// Index route
+app.get("/", utilities.handleErrors(baseController.buildHome))
 
 app.get("/", function(req, res) {
   res.render("index", { title: "Home" });
