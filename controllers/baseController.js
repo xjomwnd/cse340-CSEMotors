@@ -1,5 +1,5 @@
-# Query: 
-# ContextLines: 1
+//Query: 
+//ContextLines: 1
 
 const utilities = require("../utilities/")
 const baseController = {}
