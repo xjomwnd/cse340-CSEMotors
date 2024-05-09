@@ -77,7 +77,20 @@ app.use(static);
 app.get("/", baseController.buildHome);
 
 // Index route
-app.get("/", utilities.handleErrors(baseController.buildHome))
+// Define a middleware function to handle errors
+const handleErrorsMiddleware = (req, res, next) => {
+  try {
+    // Try to execute the next middleware or route handler
+    next();
+  } catch (error) {
+    // If an error occurs, pass it to the error handler middleware
+    next(error);
+  }
+};
+
+// Apply the error handling middleware to the route
+app.get("/", handleErrorsMiddleware, baseController.buildHome);
+
 // Inventory routes
 app.use("/inv", inventoryRoute);
 
