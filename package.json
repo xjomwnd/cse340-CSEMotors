@@ -31,30 +31,4 @@
   },
   "keywords": []
 }
-{
-  "services": [
-    {
-      "type": "web",
-      "name": "proxy",
-      "env": "docker",
-      "branch": "main",
-      "dockerfilePath": "./Dockerfile",
-      "dockerContext": "./",
-      "startCommand": "/cloud_sql_proxy -instances=${CLOUD_SQL_INSTANCE_NAME}=tcp:0.0.0.0:54320 -credential_file=/secrets/cloudsql/credentials.json",
-      "buildCommand": "docker build -t proxy .",
-      "envVars": [
-        {
-          "key": "CLOUD_SQL_INSTANCE_NAME",
-          "fromSecret": "cloudsql-credentials"
-        }
-      ],
-      "secrets": [
-        {
-          "name": "cloudsql-credentials",
-          "mountPath": "/secrets/cloudsql",
-          "data": "./credentials.json"
-        }
-      ]
-    }
-  ]
-}
+
