@@ -2,11 +2,18 @@
 function handleErrors(fn) {
   return (req, res, next) => {
     try {
+      // Execute the wrapped function
       fn(req, res, next);
     } catch (err) {
-      console.error(err); // Log the error for now
-      // You can also send an error response to the client here
-      res.status(500).send("Internal Server Error");
+      // Log the error
+      console.error(err);
+
+      // Provide a more informative error response to the client (optional)
+      if (process.env.NODE_ENV !== 'production') { // Avoid sensitive info in production
+        res.status(500).send({ message: 'Internal server error', error: err.message });
+      } else {
+        res.status(500).send({ message: 'Internal server error' });
+      }
     }
   };
 }
