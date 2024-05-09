@@ -15,7 +15,7 @@ const path = require("path");
 const utilities = require("./utilities/");
 const baseController = require("./controllers/baseController");
 const inventoryRoute = require("./routes/inventoryRoute");
-const invModel = require("../models/inventory-model");
+
 
 /* *********** Cherio ************** */
 const cheerio = require('cheerio');
