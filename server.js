@@ -77,7 +77,7 @@ app.use(static);
 app.get("/", baseController.buildHome);
 
 // Index route
-app.get("/", utilities.handleErrors(baseController.buildHome));
+app.get("/", utilities.handleErrors(baseController.buildHome))
 // Inventory routes
 app.use("/inv", inventoryRoute);
 
